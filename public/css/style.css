@@ -1,0 +1,54 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+  background: #333;
+}
+
+#slides {
+  width: 100%; height: 100%;
+  white-space: nowrap;
+  font-size: 0;
+  -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  -o-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+.animate {
+  -webkit-transition: all .3s ease-out;
+  -moz-transition: all .3s ease-out;
+  -ms-transition: all .3s ease-out;
+  -o-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+
+.slide:nth-child(1) { 
+  background: url(http://lorempixel.com/640/480/technics);
+  background-size: cover;
+}
+.slide:nth-child(2) { 
+  background: url(http://lorempixel.com/641/480/technics);
+  background-size: cover;
+}
+.slide:nth-child(3) { 
+  background: url(http://lorempixel.com/642/480/technics);
+  background-size: cover;
+}
+.slide:nth-child(4) { 
+  background: url(http://lorempixel.com/643/480/technics);
+  background-size: cover;
+}
+.slide:nth-child(5) { 
+  background: url(http://lorempixel.com/644/480/technics);
+  background-size: cover;
+}
+
+.slide {
+  width: 100%; height: 100%;
+  display: inline-block;
+}
