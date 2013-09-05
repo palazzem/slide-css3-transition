@@ -4,9 +4,9 @@ $(function () {
         _html = $('html');
 
     // Cross platform listeners
-    _html.live('mousedown touchstart', slideStart);
-    _html.live('mouseup touchend', slideEnd);
-    _html.live('mousemove touchmove', slide);
+    _html.on('mousedown touchstart', slideStart);
+    _html.on('mouseup touchend', slideEnd);
+    _html.on('mousemove touchmove', slide);
 
     function slideStart(event) {
         // If is a touch event, use just the first touch property (i.e. the first finger)
